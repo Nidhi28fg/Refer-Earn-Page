@@ -5,7 +5,10 @@ import ReferralBenefits from './components/ReferralBenefits';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import ReferralModal from './components/ReferralModal';
-import { Container } from '@mui/material';
+import { Box, Container } from '@mui/material';
+import Navbar from './components/Navbar';
+import TopBanner from './components/TopBanner';
+import FilterButtons from './components/FilterButtons';
 
 function App() {
   const [modalOpen, setModalOpen] = useState(false);
@@ -13,14 +16,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <Container>
+      <Box>
+            <TopBanner />
+            <Navbar />
+            <FilterButtons />
             <HeroSection onOpenModal={() => setModalOpen(true)} />
             <ReferralSteps />
             <ReferralBenefits onOpenModal={() => setModalOpen(true)} />
             <FAQ />
             <Footer />
             <ReferralModal open={modalOpen} onClose={() => setModalOpen(false)} />
-        </Container>
+        </Box>
       </header>
     </div>
   );

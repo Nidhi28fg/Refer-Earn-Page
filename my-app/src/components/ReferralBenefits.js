@@ -4,21 +4,21 @@ import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Typog
 // StyledTableCell for better styling control
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
     '&.MuiTableCell-head': {
-      backgroundColor: '#afcef7', // Darker header background
+      backgroundColor: '#afcef7', 
       color: '#1350a0',
       fontWeight: 'bold',
-      padding: '12px 16px', // Adjust padding
-      textAlign: 'left', // Align text to the left
+      padding: '12px 16px',
+      textAlign: 'left', 
     },
     '&.MuiTableCell-body': {
       fontSize: 14,
-      padding: '12px 16px', // Adjust padding
-      textAlign: 'left', // Align text to the left
+      padding: '12px 16px', 
+      textAlign: 'left', 
     },
   }));
 
 const ReferralBenefits = ({ onOpenModal }) => {
-  const allRows = [ // Store all rows in a separate variable
+  const allRows = [ 
     { program: "Professional Certificate in Product Management", referrerBonus: "₹ 7,000", refereeBonus: "₹ 9,000", category: "PRODUCT MANAGEMENT" },
     { program: "PG Certificate Program in Strategic Product Management", referrerBonus: "₹ 9,000", refereeBonus: "₹ 11,000", category: "STRATEGY & LEADERSHIP" },
     { program: "Executive Program in Data Driven Product Management", referrerBonus: "₹ 10,000", refereeBonus: "₹ 10,000", category: "BUSINESS MANAGEMENT" },
@@ -35,7 +35,7 @@ const ReferralBenefits = ({ onOpenModal }) => {
     { program: "Executive Program in Product Management and Project Management", referrerBonus: "₹ 10,000", refereeBonus: "₹ 10,000", category: "BUSINESS ANALYTICS" },
    ];
 
-  const [rows, setRows] = useState(allRows.slice(0, 7)); // Initially display 7 rows
+  const [rows, setRows] = useState(allRows.slice(0, 7)); 
   const [showMore, setShowMore] = useState(false);
 
   const categories = [...new Set(allRows.map(row => row.category))];
