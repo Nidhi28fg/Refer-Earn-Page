@@ -108,7 +108,7 @@ const ReferralBenefits = ({ onOpenModal }) => {
         </TableContainer>
         </Paper>
       </Box>
-      <Box sx={{ display: 'flex', justifyContent: 'flex-end', mt: 2 }}>
+      <Box sx={{ display: 'flex', justifyContent: 'flex-end', mt: 2, mr: 3}}>
           {!showMore && filteredRows.length > 7 && (
           <Button variant="text" color="primary" onClick={handleShowMore} sx={{ mt: 2 }}>
             Show More
