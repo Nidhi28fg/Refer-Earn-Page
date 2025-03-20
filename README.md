@@ -10,9 +10,10 @@ icon use - https://react-icons.github.io/react-icons/ <be>
 
 
 updated data --- 
+ab latest code pull krlo dev branch se apni local repos me aur code convention follow kro aage ka code likhne me. nhi to merge conflicts aate hai<br>
 
 
-git remote show origin # जाँचें कि क्या dev रिमोट पर है
-git fetch origin      # रिमोट ब्रांचेस को अपडेट करें
-git checkout -t origin/dev # लोकल dev ब्रांच बनाएँ और उसे ट्रैक करें (या git checkout dev)
-git pull origin dev  # नवीनतम परिवर्तन प्राप्त करें
+git remote show origin # जाँचें कि क्या dev रिमोट पर है<br>
+git fetch origin      # रिमोट ब्रांचेस को अपडेट करें<br>
+git checkout -t origin/dev # लोकल dev ब्रांच बनाएँ और उसे ट्रैक करें (या git checkout dev)<br>
+git pull origin dev  # नवीनतम परिवर्तन प्राप्त करें<br>
