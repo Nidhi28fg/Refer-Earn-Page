@@ -1,8 +1,8 @@
 **#reactNotes**
 
 # React Hooks
-https://usehooks.com/
-
+**Custom hooks - ** https://usehooks.com/
+**Icons React - ** https://react-icons.github.io/react-icons/icons/gi/
 
 git add .
 <br>
